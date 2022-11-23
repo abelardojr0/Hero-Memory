@@ -1,0 +1,25 @@
+$fontePrincipal: #333;
+$fonteDesabilitada: #aaa;
+$corBotao: linear-gradient(
+  90deg,
+  rgba(9, 100, 167, 1) 0%,
+  rgba(244, 29, 40, 1) 100%
+);
+$BotaoDisable: #eee;
+$bordaCard: #040950;
+
+$font: "Press Start 2P", cursive;
+@mixin font($tamanho) {
+  font-family: $font;
+  @if $tamanho == p0 {
+    font-size: 0.6rem;
+  } @else if $tamanho == p1 {
+    font-size: 0.8rem;
+  } @else if $tamanho == p2 {
+    font-size: 1rem;
+  } @else if $tamanho == m {
+    font-size: 1.5rem;
+  } @else if $tamanho == g {
+    font-size: 2rem;
+  }
+}

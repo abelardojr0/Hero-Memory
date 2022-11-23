@@ -1,0 +1,13 @@
+.dc {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/dc/bg.jpg);
+  background-size: cover;
+}
+
+.back-dc {
+  background-image: url(../images/dc/back.png);
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden; // pra esconder as costas da imagem das costas (que é identica a frente só que ao contrário) isso aqui faz que quando ela vire, apareça a outra imagem a do front
+}

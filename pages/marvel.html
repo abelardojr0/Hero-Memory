@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+
+
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Hero Memory | Marvel</title>
+</head>
+
+<body class="marvel">
+
+  <header class="header">
+
+    <a href="../index.html"><img class="voltar" src="../images/voltar1.png" alt=""></a>
+
+    <div class="login-logo header-logo">
+      <img src="../images/logo-principal.png" alt="">
+    </div>
+
+
+    <div class="header-infos">
+      <p data-jogador>Nick: </p>
+      <p>Tempo: <span data-tempo>00</span></p>
+      <p>Nível: <span data-modo></span></p>
+      <p>Chances: <span data-tentativas></span></p>
+    </div>
+  </header>
+  <div data-grid class="grid"></div>
+
+  <div class="container-modal" data-container-modal>
+    <div class="modal">
+      <div class="dados">
+        <p>Nome:<span data-modal-nick></span></p>
+        <p>Tempo:<span data-modal-tempo></span></p>
+        <p>Chances:<span data-modal-tentativas></span></p>
+      </div>
+      <p class="mensagem" data-mensagem></p>
+      <a href="marvel.html" data-jogar-novamente>Jogar Novamente</a>
+      <a href="../index.html">Voltar para Menu</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Hero Memory © Alguns direitos revervados.</p>
+    <span>Desenvolvido por Abelardo Júnior</span>
+    <div class="sociais">
+      <a href=""><img src="../images/linkedin.png" alt=""></a>
+      <a href=""><img src="../images/github.png" alt=""></a>
+    </div>
+  </footer>
+
+  <script src="../js/marvel.js"></script>
+</body>
+
+</html>

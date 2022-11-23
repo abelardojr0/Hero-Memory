@@ -1,0 +1,32 @@
+$desktop-max: 1200px;
+$desktop-min: 1025px;
+$notebook-min: 769px;
+$notebook-max: 1024px;
+$tablet-min: 481px;
+$tablet-max: 768px;
+$mobile-min: 320px;
+$mobile-max: 480px;
+
+@mixin d($tamanho) {
+  @if $tamanho == g {
+    @media ((min-width: #{$desktop-max + 1})) {
+      @content;
+    }
+  } @else if $tamanho == d {
+    @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+      @content;
+    }
+  } @else if $tamanho == n {
+    @media (min-width: $notebook-min) and (max-width: $notebook-max) {
+      @content;
+    }
+  } @else if $tamanho == t {
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+      @content;
+    }
+  } @else if $tamanho == m {
+    @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+      @content;
+    }
+  }
+}

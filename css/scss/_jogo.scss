@@ -1,0 +1,170 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  color: white;
+  padding-left: 30px;
+  position: relative;
+
+  p {
+    border: 2px solid white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    @include font(p2);
+    @include d(t) {
+      @include font(p1);
+    }
+
+    @include d(m) {
+      @include font(p0);
+      padding: 5px 10px;
+      line-height: 1.5;
+      text-align: center;
+      padding: 5px 10px;
+    }
+  }
+
+  @include d(d) {
+    padding-bottom: 20px;
+  }
+  @include d(n) {
+    padding-bottom: 20px;
+  }
+  @include d(t) {
+    @include font(p2);
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+  @include d(m) {
+    @include font(p1);
+    padding-left: 0px;
+    padding-bottom: 5px;
+    gap: 5px;
+  }
+}
+.header-logo {
+  img {
+    @include d(t) {
+      width: 100px;
+    }
+    @include d(m) {
+      width: 80px;
+    }
+  }
+  @include d(t) {
+    justify-self: center;
+  }
+}
+.header-infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  @include d(d) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  @include d(n) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  @include d(t) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5px;
+  }
+  @include d(m) {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 5px;
+    gap: 5px;
+  }
+}
+.voltar {
+  width: 30px;
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @include d(t) {
+    top: 10%;
+  }
+  @include d(m) {
+    top: 10%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px auto;
+  gap: 5px;
+  width: 100%;
+  max-width: 700px;
+  @include d(n) {
+    max-width: 700px;
+  }
+  @include d(t) {
+    max-width: 600px;
+    padding: 20px 20px;
+  }
+  @include d(m) {
+    row-gap: 20px;
+    max-width: 500px;
+    padding: 20px 20px;
+  }
+}
+
+.card {
+  aspect-ratio: 3/4;
+  width: 100%;
+  max-height: 170px;
+  max-width: 170px;
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d; // para fazer o objeto se comportar como 3d
+  align-self: center;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  max-width: 200px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-position: center;
+  background-size: cover;
+  border: 2px solid $bordaCard;
+  border-radius: 5px;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+.front {
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(
+    180deg
+  ); // aqui desvira a carta ou seja deixa ela de "cabeça pra cima".
+}
+
+.revelarCard {
+  transform: rotateY(180deg); // faz virar o card
+}
+
+.desabilitarCard {
+  filter: grayscale(0.9);
+  cursor: auto;
+}

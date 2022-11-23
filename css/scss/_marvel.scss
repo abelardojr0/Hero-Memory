@@ -1,0 +1,13 @@
+.marvel {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/marvel/bg.png);
+  background-size: cover;
+}
+
+.back {
+  background-image: url(../images/marvel/back.jpg);
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden; // pra esconder as costas da imagem das costas (que é identica a frente só que ao contrário) isso aqui faz que quando ela vire, apareça a outra imagem a do front
+}

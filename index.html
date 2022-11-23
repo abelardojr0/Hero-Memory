@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hero Memory | Login</title>
+</head>
+
+<body class="login">
+
+  <form data-form class="login-form" action="">
+
+    <div class="login-logo">
+      <img src="images/logo-principal.png" alt="">
+    </div>
+
+    <h2>Clique no tema </h2>
+
+    <div class="login-logos">
+      <input type="radio" name="escolha" id="dc">
+      <label class="escolha-ativa" data-escolha for="dc">
+        <img class="logo-dc" src="images/logo-dc-3.png" alt="">
+      </label>
+      <input type="radio" name="escolha" id="marvel">
+      <label data-escolha for="marvel">
+        <img class="logo-marvel" src="images/logo-marvel-3.png" alt="">
+      </label>
+    </div>
+
+    <div class="login-entradas">
+
+      <input data-input class="login-input" type="text" name="nome" id="nome" placeholder="Nickname" autocomplete="off">
+
+      <div class="dificuldade">
+        <p>Dificuldade: </p>
+
+        <input type="radio" name="dificuldade" id="facil">
+        <label class="dificuldade-ativa" data-dificuldade for="facil">Fácil</label>
+
+        <input type="radio" name="dificuldade" id="medio">
+        <label data-dificuldade for="medio">Médio</label>
+
+        <input type="radio" name="dificuldade" id="dificil">
+        <label data-dificuldade for="dificil">Difícil</label>
+
+      </div>
+
+
+      <button data-button class="login-button" type="submit" disabled>Play</button>
+    </div>
+
+  </form>
+
+  <footer class="footer">
+    <p>Hero Memory © Alguns direitos revervados.</p>
+    <span>Desenvolvido por Abelardo Júnior</span>
+    <div class="sociais">
+      <a href="https://www.linkedin.com/in/abelardo-j%C3%BAnior-" target="_blank"><img src="images/linkedin.png" alt=""></a>
+      <a href="https://github.com/abelardojr0" target="_blank"><img src="images/github.png" alt=""></a>
+    </div>
+  </footer>
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>
