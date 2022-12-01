@@ -97,14 +97,6 @@ function checarCards() {
 
 function checarVitoria() {
   const cardsDesabilitados = document.querySelectorAll(".desabilitarCard");
-  let numeroTentativas = 0;
-  if (modo.innerHTML === "Fácil") {
-    numeroTentativas = 20;
-  } else if (modo.innerHTML === "Médio") {
-    numeroTentativas = 16;
-  } else if (modo.innerHTML === "Difícil") {
-    numeroTentativas = 12;
-  }
   if (cardsDesabilitados.length === 20) {
     vitoria = true;
     clearInterval(this.loop);
