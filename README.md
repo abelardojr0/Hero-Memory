@@ -1,4 +1,5 @@
 # :star: Hero Memory
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
 
 ![logo-principal](https://user-images.githubusercontent.com/106066785/209369220-04e0601e-5068-4c04-be3a-37facc7f9438.png)
 
