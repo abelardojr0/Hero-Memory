@@ -21,17 +21,7 @@ Projeto 100% responsivo!
 ![memory-login-mobile](https://user-images.githubusercontent.com/106066785/209372275-d8d5315a-ef74-4a48-9d60-37f922f1cede.png)
 ![memory-jogo-mobile](https://user-images.githubusercontent.com/106066785/209372283-6f0443ad-fe69-4559-b597-939d74829a88.png)
 
-
-# :hammer: Funcionalidades do Projeto
-
-- `Funcionalidade 1`: Controle de Dados
-- `Funcionalidade 2`: Escolha e progressão de níveis
-- `Funcionalidade 3`: Controle de Tempo
-- `Funcionalidade 4`: Modais
-
-
-# :pushpin: Projeto em Execução
-
+# :hammer: Projeto em Execução
 
 https://user-images.githubusercontent.com/106066785/209372812-64f02d9c-6a50-48e7-a75b-f9206423d48d.mp4
 
